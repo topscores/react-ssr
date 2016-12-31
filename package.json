@@ -10,7 +10,8 @@
   "author": "Arnupharp Viratanapanu <arnupharp@larngeartech.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack --progress && node ./server/index.js",
+    "start:watch": "webpack --progress --watch && node ./server/index.js"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -24,6 +25,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
