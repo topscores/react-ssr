@@ -17,7 +17,7 @@ module.exports = [
         },
         {
           test: /\.css$/,
-          loader: 'style!css?module',
+          loader: 'isomorphic-style!css?module',
         },
       ],
     },
@@ -43,7 +43,7 @@ module.exports = [
         },
         {
           test: /\.css$/,
-          loader: 'style!css?module',
+          loader: 'isomorphic-style!css?module',
         },
       ],
     },

@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 var renderHtml = require('./renderHtml.generated').default
 
+app.use('/dist', express.static('dist'))
 app.use('*', function(req, res){
   res.send(renderHtml())
 })
